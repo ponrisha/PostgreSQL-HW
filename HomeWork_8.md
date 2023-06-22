@@ -69,10 +69,16 @@
 ![](HW8_img/8.png)
  
 2. Сгенерируем тестовые данные
-./tpcc.lua --pgsql-user=postgres --pgsql-db=postgres --pgsql-password=postgres --time=120 --threads=2 --report-interval=30 --tables=10 --scale=10 --use_fk=0  --trx_level=RC --db-driver=pgsql prepare
 
-3. Тест №1: tps = 91
+```
+./tpcc.lua --pgsql-user=postgres --pgsql-db=postgres --pgsql-password=postgres --time=120 --threads=2 --report-interval=30 --tables=10 --scale=10 --use_fk=0  --trx_level=RC --db-driver=pgsql prepare
+```
+
+4. Тест №1: tps = 91
+
+```
 ./tpcc.lua --pgsql-user=postgres --pgsql-db=postgres --pgsql-password=postgres --time=120 --threads=2 --report-interval=30 --tables=10 --scale=10 --use_fk=0  --trx_level=RC --db-driver=pgsql run
+```
 
 ![](HW8_img/9.png)
 
